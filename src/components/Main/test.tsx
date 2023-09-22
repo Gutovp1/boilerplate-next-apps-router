@@ -13,5 +13,8 @@ describe('<Main />', () => {
 
     // gerar snapshot
     expect(container.firstChild).toMatchSnapshot()
+
+    // verifica se o background-color está correto
+    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })
   })
 })
